@@ -7,7 +7,7 @@ class Album extends React.Component {
   render () {
     return (
       <div>
-        <h1>Album Page</h1>
+        <h4>Album Page</h4>
         <button className="danger">
           <Link to="/">Go Back</Link>
         </button>

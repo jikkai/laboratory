@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import Menu from './menu'
+import Menu from './Menu'
 /* eslint-enable */
 
 class Header extends React.Component {
@@ -14,11 +14,13 @@ class Header extends React.Component {
   }
 
   render () {
+    const { href } = this.props
+
     return (
       <header className="rega-header dark">
-        <Link to="/">
+        <a href={href}>
           <i className="iconfont icon-keyboardbackspace"></i>
-        </Link>
+        </a>
 
         <a onClick={this._handleToggleMenu.bind(this)}>
           <i className="iconfont icon-menu"></i>
