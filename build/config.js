@@ -6,7 +6,7 @@ module.exports = {
   vendor: [
     'react',
     'react-dom',
-    'ui-router-react'
+    'react-router'
   ],
   postcss: [
     require('postcss-cssnext')({

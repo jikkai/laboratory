@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import UIRouterReact, { UISref } from 'ui-router-react'
+import { Link } from 'react-router'
 /* eslint-enable */
 
 class Home extends React.Component {
@@ -8,11 +8,9 @@ class Home extends React.Component {
     return (
       <div>
         <h1>Home Page</h1>
-        <UISref to="album">
-          <button className="primary">
-            <a>Go Album</a>
-          </button>
-        </UISref>
+        <button className="primary">
+          <Link to="album">Go Album</Link>
+        </button>
       </div>
     )
   }

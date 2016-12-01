@@ -2,11 +2,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Router from './router'
+import Routers from './router'
 import './themes'
 /* eslint-enable */
 
 ReactDOM.render(
-  <Router />,
+  <Routers />,
   document.getElementById('app')
 )

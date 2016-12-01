@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react'
-import { UISref } from 'ui-router-react'
+import { Link } from 'react-router'
 
 import Menu from './menu'
 /* eslint-enable */
@@ -16,11 +16,9 @@ class Header extends React.Component {
   render () {
     return (
       <header className="rega-header dark">
-        <UISref to="home">
-          <a>
-            <i className="iconfont icon-keyboardbackspace"></i>
-          </a>
-        </UISref>
+        <Link to="/">
+          <i className="iconfont icon-keyboardbackspace"></i>
+        </Link>
 
         <a onClick={this._handleToggleMenu.bind(this)}>
           <i className="iconfont icon-menu"></i>
