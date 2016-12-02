@@ -1,6 +1,4 @@
-/* eslint-disable */
 import React from 'react'
-/* eslint-enable */
 
 class Menu extends React.Component {
   render () {

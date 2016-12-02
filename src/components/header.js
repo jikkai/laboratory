@@ -1,9 +1,6 @@
-/* eslint-disable */
 import React from 'react'
-import { Link } from 'react-router'
 
 import Menu from './Menu'
-/* eslint-enable */
 
 class Header extends React.Component {
   constructor (props) {

@@ -1,7 +1,5 @@
-/* eslint-disable */
 import React from 'react'
 import { Link } from 'react-router'
-/* eslint-enable */
 
 class Album extends React.Component {
   render () {

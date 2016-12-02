@@ -3,7 +3,8 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
+      experimentalObjectRestSpread: true,
+      jsx: true
     }
   },
   env: {
@@ -12,9 +13,11 @@ module.exports = {
   },
   extends: 'standard',
   plugins: [
-    'html'
+    'react'
   ],
-  'rules': {
+  rules: {
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await

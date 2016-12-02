@@ -1,14 +1,12 @@
-/* eslint-disable */
-import React, { Component } from 'react'
+import React from 'react'
 import { Router, IndexRoute, Route, hashHistory } from 'react-router'
 
 import Layout from './Layout'
 import Home from './Home'
 import Album from './Album'
 import List from './List'
-/* eslint-enable */
 
-class Routers extends Component {
+class Routers extends React.Component {
   render () {
     return (
       <Router history={hashHistory}>
