@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 class Album extends React.Component {
   render () {
     return (
-      <div>
+      <div className="fadein">
         <h4>Album Page</h4>
         <button className="danger">
           <Link to="/">Go Back</Link>

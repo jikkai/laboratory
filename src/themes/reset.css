@@ -2,14 +2,7 @@
   --white: #FFF;
 
   --green: #1ABC9C;
-  --lightgreen: #48C9B0;
   --darkgreen: #16A085;
-
-  --blue: #3498DB;
-  --lightblue: #5DADE2;
-
-  --red: #E74C3C;
-  --lightred: #EC7063;
 
   --lightgray: #E7E9EC;
 
@@ -139,37 +132,4 @@ button {
       color: var(--white);
     }
   }
-}
-
-.primary {
-  color: var(--white);
-  background-color: var(--green);
-}
-.primary:hover,
-.primary:focus,
-.primary:active {
-  background-color: var(--lightgreen);
-  border-color: var(--lightgreen);
-}
-
-.info {
-  color: var(--white);
-  background-color: var(--blue);
-}
-.info:hover,
-.info:focus,
-.info:active {
-  background-color: var(--lightblue);
-  border-color: var(--lightblue);
-}
-
-.danger {
-  color: var(--white);
-  background-color: var(--red);
-}
-.danger:hover,
-.danger:focus,
-.danger:active {
-  background-color: var(--lightred);
-  border-color: var(--lightred);
 }

@@ -1,5 +1,57 @@
-#app {
-  width: 100%;
+:root {
+  --white: #FFF;
+
+  --green: #1ABC9C;
+  --lightgreen: #48C9B0;
+
+  --blue: #3498DB;
+  --lightblue: #5DADE2;
+
+  --red: #E74C3C;
+  --lightred: #EC7063;
 }
 
+.primary {
+  color: var(--white);
+  background-color: var(--green);
+  &:hover, &:focus, &:active {
+    background-color: var(--lightgreen);
+    border-color: var(--lightgreen);
+  }
+}
 
+.info {
+  color: var(--white);
+  background-color: var(--blue);
+  &:hover, &:focus, &:active {
+    background-color: var(--lightblue);
+    border-color: var(--lightblue);
+  }
+}
+
+.danger {
+  color: var(--white);
+  background-color: var(--red);
+  &:hover, &:focus, &:active {
+    background-color: var(--lightred);
+    border-color: var(--lightred);
+  }
+}
+
+html, body, #app, main {
+  width: 100%;
+  height: 100%;
+}
+
+.fadein {
+  animation: fadein .4s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

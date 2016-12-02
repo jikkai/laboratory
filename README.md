@@ -1,21 +1,22 @@
 # gallery
 
-To start:
-
+## Getting Started
 ```bash
+# To start:
 $ npm install
-```
 
-To develop:
-
-```bash
+# To develop:
 $ npm run dev
-```
 
-
-
-To build for production:
-
-```bash
+# To build for production:
 $ npm run build
 ```
+
+## Components
+* Header
+  * props
+    * `href` (required): String
+* Menu
+  * props
+    * `active` (required): Boolean
+    * `handleToggleMenu` (required): Function

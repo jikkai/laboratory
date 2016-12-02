@@ -6,8 +6,7 @@ import { Link } from 'react-router'
 class Home extends React.Component {
   render () {
     return (
-      <div>
-        <h4>Home Page</h4>
+      <div className="fadein">
         <button className="primary">
           <Link to="album">Go Album</Link>
         </button>
