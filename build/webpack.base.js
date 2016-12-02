@@ -1,6 +1,5 @@
 'use strict'
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = require('./config')
@@ -18,6 +17,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css', '.json'],
     alias: {
       root: path.join(__dirname, '../src'),
+      action: path.join(__dirname, '../src/action'),
       components: path.join(__dirname, '../src/components')
     }
   },

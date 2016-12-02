@@ -10,6 +10,7 @@
   "author": "十界 <sonne@asaki.me>",
   "private": true,
   "dependencies": {
+    "axios": "^0.15.3",
     "han-css": "^3.3.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
@@ -35,6 +36,7 @@
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.24.1",
+    "http-proxy": "^1.15.2",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "^1.1.1",
     "progress-bar-webpack-plugin": "^1.9.0",

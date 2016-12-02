@@ -2,6 +2,7 @@
 const path = require('path')
 const express = require('express')
 const webpack = require('webpack')
+const proxy = require('http-proxy').createProxyServer()
 
 const webpackConfig = require('./webpack.dev')
 const config = require('./config')
@@ -27,6 +28,13 @@ const devMiddleWare = require('webpack-dev-middleware')(compiler, {
 })
 app.use(devMiddleWare)
 app.use(require('webpack-hot-middleware')(compiler))
+
+app.use('/api/*', (req, res) => {
+  req.url = req.baseUrl
+  proxy.web(req, res, {
+    target: 'http://118.193.194.216:8000'
+  })
+})
 
 app.get('*', (req, res) => {
   const fs = devMiddleWare.fileSystem

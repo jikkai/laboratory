@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  port: '4000',
+  port: '12934',
   title: 'gallery',
   vendor: [
     'react',
