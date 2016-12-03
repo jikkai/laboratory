@@ -1,12 +1,14 @@
 'use strict'
 
 module.exports = {
-  port: '12934',
-  title: 'gallery',
+  port: '8000',
+  title: 'Laboratory',
   vendor: [
+    'axios',
     'react',
     'react-dom',
-    'react-router'
+    'react-router',
+    'geopattern'
   ],
   postcss: [
     require('postcss-cssnext')({

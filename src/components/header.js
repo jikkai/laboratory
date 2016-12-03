@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 import Menu from './Menu'
 
@@ -11,13 +12,12 @@ class Header extends React.Component {
   }
 
   render () {
-    const { href } = this.props
-
     return (
       <header className="rega-header dark">
-        <a href={href}>
+        <Link to="/">
           <i className="iconfont icon-keyboardbackspace"></i>
-        </a>
+          返回
+        </Link>
 
         <a onClick={this._handleToggleMenu.bind(this)}>
           <i className="iconfont icon-menu"></i>

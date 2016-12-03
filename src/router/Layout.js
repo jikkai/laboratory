@@ -6,7 +6,7 @@ class Layout extends React.Component {
   render () {
     return (
       <main>
-        <Header href="/" />
+        <Header />
         {this.props.children}
       </main>
     )

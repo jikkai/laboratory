@@ -35,6 +35,12 @@ app.use('/api/*', (req, res) => {
     target: 'http://118.193.194.216:8000'
   })
 })
+app.use('/static/*', (req, res) => {
+  req.url = req.baseUrl
+  proxy.web(req, res, {
+    target: 'http://118.193.194.216:8000'
+  })
+})
 
 app.get('*', (req, res) => {
   const fs = devMiddleWare.fileSystem

@@ -1,5 +1,7 @@
 import axios from 'axios'
 
-const albums = axios.get('/api/albums')
+const about = [{}]
 
-export { albums }
+const works = axios.get('https://api.github.com/users/jikkai/repos?sort=pushed')
+
+export { about, works }

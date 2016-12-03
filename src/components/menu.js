@@ -10,6 +10,10 @@ class Menu extends React.Component {
             <i className="iconfont icon-close"></i>
           </a>
         </header>
+
+        <section className="rega-menu-content">
+          <h4 className="center">还没想好在这里放什么……</h4>
+        </section>
       </div>
     )
   }
