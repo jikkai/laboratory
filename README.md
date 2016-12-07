@@ -1,4 +1,4 @@
-# gallery
+# Laboratory
 
 ## Getting Started
 ```bash

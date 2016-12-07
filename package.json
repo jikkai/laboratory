@@ -10,7 +10,6 @@
   "author": "十界 <sonne@asaki.me>",
   "private": true,
   "dependencies": {
-    "axios": "^0.15.3",
     "geopattern": "^1.2.3",
     "han-css": "^3.3.0",
     "react": "^15.4.1",

@@ -14,10 +14,17 @@ class Header extends React.Component {
   render () {
     return (
       <header className="rega-header dark">
-        <Link to="/">
-          <i className="iconfont icon-keyboardbackspace"></i>
-          返回
-        </Link>
+        {
+          location.hash.substring(1) === '/'
+          ? <a href="/">
+              <i className="iconfont icon-keyboardbackspace"></i>
+              返回博客
+            </a>
+          : <Link to="/">
+              <i className="iconfont icon-keyboardbackspace"></i>
+              返回
+            </Link>
+        }
 
         <a onClick={this._handleToggleMenu.bind(this)}>
           <i className="iconfont icon-menu"></i>

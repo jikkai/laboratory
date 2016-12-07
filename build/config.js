@@ -4,7 +4,6 @@ module.exports = {
   port: '8000',
   title: 'Laboratory',
   vendor: [
-    'axios',
     'react',
     'react-dom',
     'react-router',
