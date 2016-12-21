@@ -1,5 +1,7 @@
 'use strict'
+
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = require('./config')
@@ -14,26 +16,12 @@ module.exports = {
     publicPath: './'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.json'],
-    alias: {
-      root: path.join(__dirname, '../src'),
-      action: path.join(__dirname, '../src/action'),
-      components: path.join(__dirname, '../src/components')
-    }
+    extensions: ['.js', '.elm', '.json']
   },
+  performance: {},
   module: {
+    noParse: /\.elm$/,
     rules: [
-      {
-        enforce: 'pre',
-        test: /.js[x]?$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.js[x]?$/,
-        loader: 'babel-loader',
-        exclude: [/node_modules/]
-      },
       {
         test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         loader: 'file-loader?limit=8192'
@@ -45,6 +33,11 @@ module.exports = {
       title: config.title,
       template: __dirname + '/index.html',
       filename: './index.html'
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: config.postcss
+      }
     })
   ]
 }

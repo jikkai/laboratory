@@ -1,12 +1,4 @@
-/* eslint-disable */
-import React from 'react'
-import ReactDOM from 'react-dom'
+require('./styles')
+var Elm = require('./Main')
 
-import Routers from './router'
-import './themes'
-/* eslint-enable */
-
-ReactDOM.render(
-  <Routers />,
-  document.getElementById('app')
-)
+Elm.Main.embed(document.querySelector('#app'))

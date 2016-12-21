@@ -1,7 +1,7 @@
 'use strict'
+
 const exec = require('child_process').execSync
 const webpack = require('webpack')
-const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
@@ -32,31 +32,20 @@ base.plugins.push(
   new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
     filename: 'vendor.[chunkhash:8].js'
-  }),
-  new webpack.LoaderOptionsPlugin({
-    minimize: true,
-    options: {
-      postcss: config.postcss
-    }
   })
 )
 
+base.module.rules.push({
+  test:    /\.elm$/,
+  loader:  'elm-webpack-loader',
+  exclude: [/elm-stuff/, /node_modules/]
+})
 base.module.rules.push({
   test: /\.css$/,
   loader: ExtractTextPlugin.extract({
     loader: [{ loader: 'css-loader' }, 'postcss-loader'],
     fallbackLoader: 'style-loader'
-  }),
-  exclude: path.resolve(__dirname, '../node_modules')
-})
-
-base.module.rules.push({
-  test: /\.css$/,
-  loader: ExtractTextPlugin.extract({
-    loader: [{ loader: 'css-loader' }],
-    fallbackLoader: 'style-loader'
-  }),
-  include: path.resolve(__dirname, '../node_modules')
+  })
 })
 
 module.exports = base
