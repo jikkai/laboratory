@@ -901,15 +901,15 @@ elliptic@^6.0.0:
     hash.js "^1.0.0"
     inherits "^2.0.1"
 
-elm-hot-loader@^0.5.2:
-  version "0.5.3"
-  resolved "http://registry.npm.taobao.org/elm-hot-loader/download/elm-hot-loader-0.5.3.tgz#953fd04556459ea7ccb86776029fd4170bb3ab2c"
+elm-hot-loader@^0.5.4:
+  version "0.5.4"
+  resolved "http://registry.npm.taobao.org/elm-hot-loader/download/elm-hot-loader-0.5.4.tgz#5fd9d9058f6efeac2f5fcf83aeef81cf3984312e"
   dependencies:
     loader-utils "^0.2.12"
 
-elm-webpack-loader@^4.1.0:
-  version "4.1.0"
-  resolved "http://registry.npm.taobao.org/elm-webpack-loader/download/elm-webpack-loader-4.1.0.tgz#331cbd5cb1068ca19b8d37fa906b505e59003132"
+elm-webpack-loader@^4.1.1:
+  version "4.1.1"
+  resolved "http://registry.npm.taobao.org/elm-webpack-loader/download/elm-webpack-loader-4.1.1.tgz#6c8b5f88e36c6885955e7de0e7df8a3c7aab1871"
   dependencies:
     elm "^0.18.0"
     glob "^7.1.1"
@@ -2660,9 +2660,9 @@ process@^0.11.0:
   version "0.11.9"
   resolved "http://registry.npm.taobao.org/process/download/process-0.11.9.tgz#7bd5ad21aa6253e7da8682264f1e11d11c0318c1"
 
-progress-bar-webpack-plugin@^1.9.0:
-  version "1.9.0"
-  resolved "http://registry.npm.taobao.org/progress-bar-webpack-plugin/download/progress-bar-webpack-plugin-1.9.0.tgz#efe9055ae03ed1a6a9864c104120ebfe5b7de341"
+progress-bar-webpack-plugin@^1.9.1:
+  version "1.9.1"
+  resolved "http://registry.npm.taobao.org/progress-bar-webpack-plugin/download/progress-bar-webpack-plugin-1.9.1.tgz#8cf81ed655c64b31a9c58b6441a1c2d23c5afb21"
   dependencies:
     chalk "^1.1.1"
     object.assign "^4.0.1"
@@ -2715,13 +2715,9 @@ q@^1.1.2:
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/q/download/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
 
-qs@6.2.0:
+qs@6.2.0, qs@~6.2.0:
   version "6.2.0"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
-
-qs@~6.2.0:
-  version "6.2.1"
-  resolved "http://registry.npm.taobao.org/qs/download/qs-6.2.1.tgz#ce03c5ff0935bc1d9d69a9f14cbd18e568d67625"
 
 qs@~6.3.0:
   version "6.3.0"
