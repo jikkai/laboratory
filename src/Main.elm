@@ -1,11 +1,7 @@
-import Html exposing (text)
+import Html exposing (..)
+import Html.Attributes exposing (..)
 
-names: List String
--- names = ["Alice", "Bob", "Chuck"]
-names = []
+import Components.Counter exposing ( counter )
 
-appendString: List String -> String -> String -> Html.Html text
-appendString a b c = if List.isEmpty a then text (b ++ c) else text "failed"
-
-main: Html.Html text
-main = appendString names "hello world" "!"
+main : Program Never Components.Counter.Model Components.Counter.Msg
+main = counter
