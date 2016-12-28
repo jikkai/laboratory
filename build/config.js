@@ -1,11 +1,10 @@
 'use strict'
 
 module.exports = {
-  port: '9000',
+  port: '6928',
   title: 'laboratory',
-  vendor: [
-    'underscore'
-  ],
+  // vendor: [
+  // ],
   postcss: [
     require('postcss-cssnext')({
       browsers: ['last 2 versions', 'ie > 8']

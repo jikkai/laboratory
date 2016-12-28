@@ -1,5 +1,5 @@
-import Html exposing (..)
-import Html.Attributes exposing (..)
+-- import Html exposing (..)
+-- import Html.Attributes exposing (..)
 
 import Components.Counter exposing ( counter )
 

@@ -10,7 +10,7 @@ const config = require('./config')
 
 exec('rm -rf dist/')
 
-base.entry.vendor = config.vendor
+// base.entry.vendor = config.vendor
 base.output.filename = '[name].[chunkhash:8].js'
 base.stats = { children: false }
 

@@ -21,10 +21,8 @@
     "postcss-loader": "^1.2.1",
     "progress-bar-webpack-plugin": "^1.9.1",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.0-rc.0",
+    "webpack": "^2.2.0-rc.2",
     "webpack-dev-server": "^1.16.2"
   },
-  "dependencies": {
-    "underscore": "^1.8.3"
-  }
+  "dependencies": {}
 }
