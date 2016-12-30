@@ -1,7 +1,8 @@
--- import Html exposing (..)
--- import Html.Attributes exposing (..)
+import Html 
+import Components.Button as Button
 
-import Components.Counter exposing ( counter )
-
-main : Program Never Components.Counter.Model Components.Counter.Msg
-main = counter
+main : Program Never number Button.Msg
+main = Html.beginnerProgram {
+  model = Button.initModel,
+  view = Button.view,
+  update = Button.update }
